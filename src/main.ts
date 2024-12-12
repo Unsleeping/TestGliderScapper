@@ -4,6 +4,7 @@ import {
   DISABLE_LISTENING_SCRAPING,
   DISABLE_SPEAKING_SCRAPING,
 } from "./config";
+import { downloadAssets } from "./download_s3";
 import {
   ListeningQuestionItem,
   ReadingQuestionItem,
@@ -68,6 +69,8 @@ const main = async () => {
     scrapListeningExams(),
     scrapSpeakingExams(),
   ]);
+
+  downloadAssets().catch(console.error);
 };
 
 main();
