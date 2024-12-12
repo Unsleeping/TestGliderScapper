@@ -1,0 +1,25 @@
+{
+  "name": "test-glider-scrapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "compile": "tsc",
+    "run": "node ./dist/main.js",
+    "start": "npm run compile && npm run run"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "unsleeping",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "@types/node": "^22.10.2"
+  }
+}
